@@ -1,0 +1,18 @@
+REM Change Wallpaper L.SOUMILLE
+DELAY 1000
+GUI SPACE
+STRING terminal
+DELAY 500
+ENTER
+DELAY 200
+STRING cd /tmp
+ENTER
+DELAY 200
+STRING wget --output-document image.jpg https://unsplash.com/photos/CwkiN6_qpDI/download?force=true
+ENTER
+DELAY 5000
+STRING osascript -e 'tell application "Finder" to set desktop picture to POSIX file "~/flip.jpg"'
+ENTER
+DELAY 200
+F11
+
